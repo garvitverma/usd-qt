@@ -29,14 +29,14 @@ from __future__ import print_function
 from collections import OrderedDict, defaultdict
 
 from pxr import Usd, UsdUtils, Sdf
-from pxr.UsdQt.hierarchyModel import HierarchyStandardFilterModel
-from pxr.UsdQt import roles
+from luma.UsdQt.hierarchyModel import HierarchyStandardFilterModel
+from luma.UsdQt import roles
 
 from ._Qt import QtWidgets, QtCore
 
 if False:
     from typing import *
-    from pxr.UsdQt.hierarchyModel import HierarchyBaseModel
+    from luma.UsdQt.hierarchyModel import HierarchyBaseModel
 
 
 class HierarchyStandardContextMenuStrategy(object):
@@ -282,7 +282,7 @@ class HierarchyEditor(QtWidgets.QWidget):
 
 if __name__ == "__main__":
     import sys
-    from pxr.UsdQt.hierarchyModel import HierarchyBaseModel
+    from luma.UsdQt.hierarchyModel import HierarchyBaseModel
 
     app = QtWidgets.QApplication(sys.argv)
 

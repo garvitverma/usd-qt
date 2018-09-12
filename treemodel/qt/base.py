@@ -26,7 +26,7 @@ from __future__ import absolute_import
 
 from treemodel.itemtree import ItemTree, TreeItem
 
-from pxr.UsdQt._Qt import QtCore, QtGui
+from luma.UsdQt._Qt import QtCore, QtGui
 
 if False:
     from typing import *

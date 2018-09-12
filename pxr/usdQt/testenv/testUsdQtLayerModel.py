@@ -29,7 +29,7 @@ import unittest2 as unittest
 import os.path
 
 from pxr import Usd, Sdf, UsdQt
-from pxr.UsdQt._Qt import QtCore
+from luma.UsdQt._Qt import QtCore
 
 stageFilePath = "simpleLayerStack.usda"
 stageFilePath = stageFilePath if os.path.isfile(stageFilePath) else \

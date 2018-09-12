@@ -150,7 +150,7 @@ function(_install_python LIBRARY_NAME)
     foreach(file ${ip_FILES})
         set(filesToInstall "")
         set(installDest 
-            "${libPythonPrefix}/pxr/${LIBRARY_INSTALLNAME}")
+            "${libPythonPrefix}/luma/${LIBRARY_INSTALLNAME}")
 
         # Only attempt to compile .py files. Files like plugInfo.json may also
         # be in this list
@@ -296,7 +296,7 @@ function(_install_pyside_ui_files LIBRARY_NAME)
 
     install(
         FILES ${uiFiles}
-        DESTINATION "${libPythonPrefix}/pxr/${LIBRARY_INSTALLNAME}"
+        DESTINATION "${libPythonPrefix}/luma/${LIBRARY_INSTALLNAME}"
     )
 endfunction() # _install_pyside_ui_files
 
@@ -978,7 +978,7 @@ function(_pxr_python_module NAME)
     # 'from pxr import X'. Additionally, python libraries always install
     # into the default lib install, not into the third_party subdirectory
     # or similar.
-    set(libInstallPrefix "lib/python/pxr/${pyModuleName}")
+    set(libInstallPrefix "lib/python/luma/${pyModuleName}")
 
     # Python modules need to be able to access their corresponding
     # wrapped library and the install lib directory.

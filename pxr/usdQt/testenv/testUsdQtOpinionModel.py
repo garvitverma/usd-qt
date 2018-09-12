@@ -30,7 +30,7 @@ import os
 import os.path
 
 from pxr import Usd, UsdQt
-from pxr.UsdQt._Qt import QtCore, QtWidgets
+from luma.UsdQt._Qt import QtCore, QtWidgets
 
 
 class TestOpinionModel(unittest.TestCase):

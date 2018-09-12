@@ -29,19 +29,19 @@ from __future__ import print_function
 from pxr import Usd
 
 # TODO: Make all proxies and handlers not private
-from pxr.UsdQt._bindings import _AttributeProxy, _DisplayGroupProxy, \
+from luma.UsdQt._bindings import _AttributeProxy, _DisplayGroupProxy, \
     _MetadataProxy, _PrimProxy, _VariantSetProxy, _VariantSetsProxy
-from pxr.UsdQt.opinionStackModel import OpinionStackFilter, OpinionStackModel, \
+from luma.UsdQt.opinionStackModel import OpinionStackFilter, OpinionStackModel, \
     _AttributeHandler, _PrimMetadataHandler, _VariantSetHandler, \
     _VariantSetsHandler
-from pxr.UsdQt.valueDelegate import ValueDelegate
+from luma.UsdQt.valueDelegate import ValueDelegate
 
 from ._Qt import QtCore, QtWidgets
 from . import treeView
 
 if False:
     from typing import *
-    from pxr.UsdQt.opinionStackModel import _BaseHandler, OpinionBaseModel
+    from luma.UsdQt.opinionStackModel import _BaseHandler, OpinionBaseModel
 
 
 class OpinionStackWidget(QtWidgets.QWidget):
@@ -232,7 +232,7 @@ class OpinionController(QtCore.QObject):
 
 if __name__ == '__main__':
     import sys
-    from pxr.UsdQt.opinionModel import OpinionStandardModel
+    from luma.UsdQt.opinionModel import OpinionStandardModel
 
     app = QtWidgets.QApplication(sys.argv)
     stage = Usd.Stage.Open('../usdQt/testenv/testUsdQtOpinionModel/simple.usda')

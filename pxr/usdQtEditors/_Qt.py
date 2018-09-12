@@ -27,8 +27,8 @@
 # this file to specify any site specific preferences.
 
 from __future__ import absolute_import
-import pxr.UsdQt._Qt
+import luma.UsdQt._Qt
 
-globals().update(pxr.UsdQt._Qt.__dict__)
+globals().update(luma.UsdQt._Qt.__dict__)
 
-del pxr
+del luma

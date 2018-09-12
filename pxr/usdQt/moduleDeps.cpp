@@ -40,7 +40,7 @@ TF_REGISTRY_FUNCTION(TfScriptModuleLoader) {
         TfToken("usd")
     };
     TfScriptModuleLoader::GetInstance().
-        RegisterLibrary(TfToken("usdQt"), TfToken("pxr.UsdQt"), reqs);
+        RegisterLibrary(TfToken("usdQt"), TfToken("luma.UsdQt"), reqs);
 }
 
 PXR_NAMESPACE_CLOSE_SCOPE

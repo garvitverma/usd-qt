@@ -29,7 +29,7 @@ from __future__ import absolute_import
 import os
 import unittest
 
-from pxr.UsdQt._Qt import QtCore, QtWidgets, QtGui
+from luma.UsdQt._Qt import QtCore, QtWidgets, QtGui
 from pxr import Gf, Sdf, UsdQt
 
 

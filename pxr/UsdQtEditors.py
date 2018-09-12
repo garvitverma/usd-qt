@@ -1,2 +1,2 @@
-import pxr.usdQtEditors
-globals().update(pxr.usdQtEditors.__dict__)
+import luma.UsdQtEditors
+globals().update(luma.UsdQtEditors.__dict__)

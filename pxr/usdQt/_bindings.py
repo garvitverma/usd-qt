@@ -22,7 +22,7 @@
 # language governing permissions and limitations under the Apache License.
 #
 
-import pxr.UsdQt._usdQt as _usdQt
+import luma.UsdQt._usdQt as _usdQt
 from pxr import Tf
 Tf.PrepareModule(_usdQt, locals())
 del _usdQt, Tf

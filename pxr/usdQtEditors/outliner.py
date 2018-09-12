@@ -33,20 +33,20 @@ from functools import partial
 from ._Qt import QtCore, QtGui, QtWidgets
 
 from pxr import Sdf, Tf, Usd
-from pxr.UsdQt.hierarchyModel import HierarchyBaseModel
-from pxr.UsdQt.hooks import UsdQtHooks
-from pxr.UsdQt.layerModel import LayerStackBaseModel
-from pxr.UsdQt.qtUtils import DARK_ORANGE, MenuAction, MenuSeparator, \
+from luma.UsdQt.hierarchyModel import HierarchyBaseModel
+from luma.UsdQt.hooks import UsdQtHooks
+from luma.UsdQt.layerModel import LayerStackBaseModel
+from luma.UsdQt.qtUtils import DARK_ORANGE, MenuAction, MenuSeparator, \
     MenuBuilder, ContextMenuMixin, MenuBarBuilder, CopyToClipboard
-from pxr.UsdQt.usdUtils import GetPrimVariants
-from pxr.UsdQtEditors.layerTextEditor import LayerTextEditorDialog
+from luma.UsdQt.usdUtils import GetPrimVariants
+from luma.UsdQtEditors.layerTextEditor import LayerTextEditorDialog
 
 if False:
     from typing import *
     ContextProvider = Any
 
 
-NO_VARIANT_SELECTION = '<No Variant Selected>'
+NO_VARIANT_SELECTION = '<No Vavi riant Selected>'
 
 NULL_INDEX = QtCore.QModelIndex()
 
