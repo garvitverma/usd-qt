@@ -3,6 +3,10 @@
 cmake_minimum_required(VERSION 3.1)
 project(usdqt)
 
+# our python
+set(PYTHON_LIBRARY "/dd/tools/cent6_64/package/python/2.7.13_shared/lib/libpython2.7.so")
+include_directories("/dd/tools/cent6_64/package/python/2.7.13_shared/include/python2.7")
+
 set(CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH};${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules;${CMAKE_CURRENT_SOURCE_DIR}/cmake/macros")
 
 add_compile_options(-Wall -Wno-unused-local-typedefs
@@ -18,7 +22,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(USD REQUIRED)
 find_package(TBB REQUIRED)
 
-add_definitions(-DPXR_PYTHON_SUPPORT_ENABLED)
+#add_definitions(-DPXR_PYTHON_SUPPORT_ENABLED)
 find_package(PythonInterp 2.7 REQUIRED)
 find_package(PythonLibs 2.7 REQUIRED)
 
